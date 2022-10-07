@@ -11,7 +11,7 @@ set -e
 # Parse input file names from config.json. 
 rois=`jq -r '.rois' config.json`
 dwi=`jq -r '.dwi' config.json`
-anat=`jq -r '.anat' config.json`
+t1=`jq -r '.t1' config.json`
 
 # Make an output directory.
 mkdir -p output
@@ -26,6 +26,6 @@ done
 
 # Copy diff and t1 into new location
 cp -r ${dwi}.nii.gz ./output/scans
-cp -r ${anat}.nii ./output/scans
+cp -r ${t1}.nii ./output/scans
 
 
