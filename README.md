@@ -4,6 +4,7 @@
 ### Author
 - Hanna Willis (hanna.willis@ndcn.ox.ac.uk)
 
-# app-combineROI
+# app-combine-roi-scans
 
-This app will combine multiple ROI datatypes, diffusion scans and t1 scans into one ROI file. This app is adapted from svincibo/app-combineROI.
+This app will combine multiple ROI datatypes, diffusion scans and t1 scans into one ROI file. 
+This app is adapted from svincibo/app-combineROI.
