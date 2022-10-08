@@ -14,9 +14,9 @@ dwi=`jq -r '.dwi' config.json`
 t1=`jq -r '.t1' config.json`
 
 # Make an output directory.
-mkdir -p output
-mkdir -p output/rois
-mkdir -p output/scans
+mkdir output
+mkdir output/rois
+mkdir output/scans
 
 # Copy files from the roi1 location to the new location and rename.
 for roiname in $(ls $rois); do	
