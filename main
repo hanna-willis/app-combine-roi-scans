@@ -8,7 +8,7 @@ set -x
 set -e
 
 # Run script.
-./combineROI.sh
+./combine_scans_and_ROI.sh
 
 # Check for output.
 #[ ! -s dwi.nii ] && exit 1
