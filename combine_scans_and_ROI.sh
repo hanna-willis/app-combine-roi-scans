@@ -25,7 +25,7 @@ for roiname in $(ls $rois); do
 done
 
 # Copy diff and t1 into new location
-cp -r ${dwi}.nii.gz ./output/scans
-cp -r ${t1}.nii ./output/scans
+cp -r ${dwi} ./output/scans
+cp -r ${t1} ./output/scans
 
 
