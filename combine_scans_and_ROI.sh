@@ -12,7 +12,7 @@ set -e
 rois_loc=`jq -r '.rois_loc' config.json`
 
 # Parse input file names from config.json. 
-rois=`jq -r '.rois' config.json`
+#rois=`jq -r '.rois' config.json`
 dwi=`jq -r '.dwi' config.json`
 t1=`jq -r '.t1' config.json`
 
@@ -20,9 +20,9 @@ t1=`jq -r '.t1' config.json`
 mkdir output output/rois
 
 # Copy files from the roi1 location to the new location and rename.
-for roiname in $(ls $rois); do	
+for roiname in $(ls ${rois_loc}); do	
 	# Copy the rois from the first ROI to the output ROI directory.
-	cp -r ${rois_loc}/$rois/$roiname ./output/rois/
+	cp -r ${rois_loc}/$roiname ./output/rois/
 done
 
 # Copy diff and t1 into new location
